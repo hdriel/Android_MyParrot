@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/stands_layout"
+    android:background="@drawable/background_blue_circle"
+     >
+    <TextView 
+        android:id="@+id/text_stands"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:text="פה תוכל להתרשם ולקבל מוטיבציה לבנות מעמד לתוכי שלך מכמה דברים פשוטים...\n ככה שהתוכי שלך יוכל להנות מחיי שבי טובים ומלאיי תעסוקה."
+        android:textSize="18sp" 
+        android:padding="5dp"
+        android:layout_weight="1"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="2"
+	    android:orientation="vertical"
+        >
+    
+    <GridView
+        android:id="@+id/gridview_stands"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+    
+	</LinearLayout>
+</LinearLayout>

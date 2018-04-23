@@ -1,0 +1,263 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/food_layout"
+    tools:context="myparrot.main.MainActivity" 
+    android:background="@drawable/background_gradient_green">
+
+    <ScrollView 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    
+        <LinearLayout 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+			android:orientation="vertical" 
+			android:visibility="visible">
+    	
+            
+			    <TextView
+			        android:id="@+id/food1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="center"
+			        android:text="@string/food_article1" />
+				
+				<TextView
+			        android:id="@+id/food2"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/food_article2" />
+				<!-- כופתיות  -->
+				
+				
+				<LinearLayout 
+				    android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:orientation="horizontal"
+				    >
+				
+						<ImageView 
+					        android:id="@+id/food_image_1"
+					        android:layout_width="match_parent"
+					        android:layout_height="150dp"
+					        android:layout_weight="1"
+					        android:gravity="center"
+					        android:src="@drawable/food1"
+					        />
+						
+						<ImageView 
+					        android:id="@+id/food_image_2"
+					        android:layout_width="match_parent"
+					        android:layout_height="150dp"
+					        android:layout_weight="1"
+					        android:gravity="center"
+					        android:src="@drawable/food2"
+					        />
+						
+						<ImageView 
+					        android:id="@+id/food_image_3"
+					        android:layout_width="match_parent"
+					        android:layout_height="150dp"
+					        android:layout_weight="1"
+					        android:gravity="center"
+					        android:src="@drawable/food3"
+					        />
+						
+				</LinearLayout>
+				
+				
+				
+				<TextView
+			        android:id="@+id/food3"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/food_article3" />
+				
+				<!-- פירות וירקות  -->
+				
+				<ImageView 
+			        android:id="@+id/food_image_4"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:gravity="center"
+			        android:src="@drawable/food4"
+			        />
+				
+				<TextView
+			        android:id="@+id/food4"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/food_article4" />
+				
+				<!-- סידן וחלבונים  -->
+				
+				<ImageView 
+			        android:id="@+id/food_image_5"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:gravity="center"
+			        android:src="@drawable/food5"
+			        />
+				
+				<TextView
+			        android:id="@+id/food5"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/food_article5" />
+				
+				<!-- ביצה  -->
+				
+				<ImageView 
+			        android:id="@+id/food_image_6"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:gravity="center"
+			        android:src="@drawable/food6"
+			        />
+				
+				<TextView
+			        android:id="@+id/food6"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/food_article6" />
+				
+				<!-- שקדים  -->
+				
+				<ImageView 
+			        android:id="@+id/food_image_7"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:gravity="center"
+			        android:src="@drawable/food7"
+			        />
+				 
+			        
+				<TextView
+			        android:id="@+id/food7"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/food_article7" />
+				
+				<!-- זרעים וזרעונים  -->
+				
+				<ImageView 
+			        android:id="@+id/food_image_8"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:gravity="center"
+			        android:src="@drawable/food8"
+			        />
+				
+				<TextView
+			        android:id="@+id/food8"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/food_article8" />
+				
+				<!-- תערובת השרייה  -->
+				
+				<ImageView 
+			        android:id="@+id/food_image_9"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:gravity="center"
+			        android:src="@drawable/food9"
+			        />
+				
+				<TextView
+			        android:id="@+id/food9"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/food_article9" />
+				
+				<!-- אבוקדו ושוקולד  -->
+				<ScrollView 
+				    android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+				    >
+				<LinearLayout 
+				    android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:orientation="horizontal"
+				    >
+				
+						<ImageView 
+					        android:id="@+id/food_image_10"
+					        android:layout_width="match_parent"
+					        android:layout_height="150dp"
+					        android:layout_weight="1"
+					        android:gravity="center"
+					        android:src="@drawable/food10"
+					        />
+						
+						<ImageView 
+					        android:id="@+id/food_image_11"
+					        android:layout_width="match_parent"
+					        android:layout_height="150dp"
+					        android:layout_weight="1"
+					        android:gravity="center"
+					        android:src="@drawable/food11"
+					        />
+				
+				</LinearLayout>
+				</ScrollView>
+				
+				
+				<TextView
+			        android:id="@+id/food10"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/food_article10" />
+				
+				
+				
+				<LinearLayout 
+			        android:layout_width="match_parent"
+			    	android:layout_height="wrap_content"
+					android:orientation="horizontal" >  
+						
+		   				 <TextView
+					        android:id="@+id/food_url"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:textSize="17sp"
+					        android:gravity="left"
+					        android:layout_weight="0.2"
+					        android:textColor="#0000ff"
+					        android:text="@string/food_url" />
+		   				 
+		   				 <TextView
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:textSize="17sp"
+					        android:layout_weight="0.8"
+					        android:gravity="right"
+					        android:text="נלקח מהאתר:" />
+   				 </LinearLayout>
+</LinearLayout>
+</ScrollView>   
+
+</LinearLayout>

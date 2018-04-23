@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/feather_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    tools:context="myparrot.main.MainActivity"
+    android:background="@drawable/background_gradient_blue" >
+
+    <ToggleButton 
+        android:id="@+id/fea_toggle_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:checked="true"
+        android:textOn="לגזירת ציפורניים"
+        android:textOff="לגזירת נוצות"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_blue"
+        />
+    
+    <ScrollView 
+        android:id="@+id/fea_scrol"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    
+    <LinearLayout 
+        android:id="@+id/fea_lay"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+		android:orientation="vertical" 
+		android:visibility="visible">
+		
+    <TextView
+        android:id="@+id/fea_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:text="@string/feather" />
+    	
+    <TextView
+        android:id="@+id/fea_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:gravity="right"
+        android:text="@string/feather1" />
+    
+    <ImageView 
+        android:id="@+id/fea_image_1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:src="@drawable/f1"
+        />
+    
+    <TextView
+        android:id="@+id/fea_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:gravity="right"
+        android:text="@string/feather2" />
+    
+    <ImageView 
+        android:id="@+id/fea_image_2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:src="@drawable/f2"
+        />
+    
+    <TextView
+        android:id="@+id/fea_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:gravity="right"
+        android:text="@string/feather3" />
+    
+    <ImageView 
+        android:id="@+id/fea_image_3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:src="@drawable/f3"
+        />
+    <ImageView 
+        android:id="@+id/fea_image_4"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:src="@drawable/f4"
+        />
+    <ImageView 
+        android:id="@+id/fea_image_5"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:src="@drawable/f5"
+        />
+    			<LinearLayout 
+			        android:layout_width="match_parent"
+			    	android:layout_height="wrap_content"
+					android:orientation="horizontal" >  
+						
+		   				 <TextView
+					        android:id="@+id/feather_url"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:textSize="17sp"
+					        android:gravity="left"
+					        android:layout_weight="0.4"
+					        android:textColor="#0000ff"
+					        android:text="@string/feather_url" />
+		   				 
+		   				 <TextView
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:textSize="17sp"
+					        android:layout_weight="0.6"
+					        android:gravity="right"
+					        android:text="נלקח מהאתר:" />
+   				 </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+ 	<ScrollView 
+ 	    android:id="@+id/nail_scrol"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+    
+        <LinearLayout 
+	        android:id="@+id/nail_lay"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+			android:orientation="vertical" 
+			android:visibility="gone">
+    	
+            
+			    <TextView
+			        android:id="@+id/nail_0"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="center"
+			        android:text="@string/nail" />
+			    
+			    <ImageView 
+			        android:id="@+id/nail_image_1"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+					android:gravity="center"
+			        android:src="@drawable/n1"
+			        />
+			    
+			    <TextView
+			        android:id="@+id/nail_1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/nail1" />
+			    
+			    <ImageView 
+			        android:id="@+id/nail_image_2"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:gravity="center"
+			        android:src="@drawable/n2"
+			        />
+			    <ImageView 
+			        android:id="@+id/nail_image_3"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:gravity="center"
+			        android:src="@drawable/n3"
+			        />
+			    
+			    <TextView
+			        android:id="@+id/nail_2"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:textSize="17sp"
+			        android:gravity="right"
+			        android:text="@string/nail2" />
+			    
+			    <ImageView 
+			        android:id="@+id/nail_image_4"
+			        android:layout_width="match_parent"
+			        android:layout_height="150dp"
+			        android:gravity="center"
+			        android:src="@drawable/n4"
+			        />
+			    
+    			<LinearLayout 
+			        android:layout_width="match_parent"
+			    	android:layout_height="wrap_content"
+					android:orientation="horizontal" >  
+						
+		   				 <TextView
+					        android:id="@+id/nail_url"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:textSize="17sp"
+					        android:gravity="left"
+					        android:layout_weight="0.4"
+					        android:textColor="#0000ff"
+					        android:text="@string/nail_url" />
+		   				 
+		   				 <TextView
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:textSize="17sp"
+					        android:layout_weight="0.6"
+					        android:gravity="right"
+					        android:text="נלקח מהאתר:" />
+   				 </LinearLayout>
+</LinearLayout>
+</ScrollView>   
+
+ 	
+</LinearLayout>

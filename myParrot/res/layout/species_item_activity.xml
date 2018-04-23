@@ -1,0 +1,366 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/speItem_layout"
+    tools:context="myparrot.main.MainActivity" >
+     
+     <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/border"
+	    android:orientation="horizontal" >
+	    
+		    <!-- תמונה ראשית --> 
+		    <LinearLayout 
+		        android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="2"
+			    android:orientation="vertical" >
+		    <ImageView
+			    android:id="@+id/spe_item_image"
+			    android:layout_width="100dp"
+			    android:layout_height="100dp"
+				android:layout_weight="1"
+			    android:layout_gravity="left"
+			    android:src="@android:drawable/ic_menu_gallery" />
+		    </LinearLayout>
+		    
+    		<!-- סוג התוכי -->
+    		<LinearLayout 
+		        android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_weight="1"
+			    android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/spe_item_name"
+		        android:layout_width="match_parent"
+		        android:layout_height="30dp"
+		        android:layout_weight="2"
+		        android:gravity="center"
+		        android:text="תוכי קוקטייל"
+		        android:textSize="25dp" />
+		   <ScrollView 
+		        android:layout_width="match_parent"
+			    android:layout_height="50dp">  
+				    <TextView
+				        android:id="@+id/spe_item_others"
+				        android:layout_width="match_parent"
+				        android:layout_height="50dp"
+				        android:layout_weight="1"
+				        android:gravity="right"
+				        android:text="סוגים: "
+				        android:textSize="12dp" />
+		   </ScrollView>
+		    <TextView
+		        android:id="@+id/spe_item_sizer"
+		        android:layout_width="match_parent"
+		        android:layout_height="20dp"
+		        android:layout_weight="1"
+		        android:gravity="right"
+		        android:text="גודל התוכי: "
+		        android:textSize="12dp" />
+    	 </LinearLayout>
+    </LinearLayout>
+    
+     
+    <!-- הופעה חיצונית -->  
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/border"
+	    android:orientation="vertical"
+        >
+        
+			    <TextView
+			        android:id="@+id/spe_item_t_description"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"
+			        android:gravity="right"
+			        android:text="תיאור:  "
+			        android:textSize="15dp" />
+			  <ScrollView 
+			      android:layout_width="match_parent"
+				  android:layout_height="60dp">
+		    
+			    <TextView 
+			        android:id="@+id/spe_item_description"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:text="תוכי קוקוטייל (Nymphicus hollandicus) ימצא לרוב באזורים יבשים או יבשים למחצה ביבשת אוסטרליה. רוב גופם של תוכי קוקטיל אפור זנבם ארוך ועל ראשם מתנוססת ציצת נוצות דקה. לזכר צאוור ולחיים צהובים עם כתם כתום ולנקבה ראש אפור ברובו עם כתם צהוב"
+				    android:gravity="right"
+				    android:textSize="12dp"
+			        />
+			</ScrollView>
+			    
+
+    </LinearLayout>
+    
+    <!-- אורך , משקל , מחיר -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        
+    		<!-- גודל כלוב -->
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+			    android:layout_height="80dp"
+			    android:layout_weight="1"
+			    android:background="@drawable/border"
+			    android:orientation="vertical" >
+		        
+				    <TextView 
+				        android:id="@+id/spe_item_t_size"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:text="גודל כלוב:"
+					    android:gravity="bottom|center"
+					    android:textSize="15dp" />
+				        
+				    <TextView 
+				        android:id="@+id/spe_item_size"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="10x10x50"
+					    android:layout_weight="2"
+					    android:gravity="center"
+					    android:textSize="12dp" />
+				        
+		    </LinearLayout>
+		    
+     		<!-- מחיר -->
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+			    android:layout_height="80dp"
+			    android:layout_weight="2.5"
+			    android:background="@drawable/border"
+			    android:orientation="vertical" >
+
+					    
+				        <LinearLayout 
+				            android:id="@+id/spe_item_l_price"
+					        android:layout_width="match_parent"
+						    android:layout_height="match_parent"
+						    android:layout_weight="5"
+						    android:orientation="vertical" >
+						    
+					        <TextView
+					            android:id="@+id/spe_item_t_price"
+						        android:layout_width="match_parent"
+						        android:layout_height="wrap_content"
+						        android:gravity="center"
+						        android:text="מחיר"
+						        android:layout_weight="1"
+						        android:textSize="15dp" />
+					        
+				        </LinearLayout> 
+				        
+				        <LinearLayout 
+						        android:layout_width="match_parent"
+							    android:layout_height="match_parent"
+							    android:layout_weight="3"
+							    android:orientation="horizontal" > 
+						        
+						        <LinearLayout 
+						        android:layout_width="match_parent"
+							    android:layout_height="match_parent"
+							    android:layout_weight="1"
+							    android:background="@drawable/border"
+							    android:orientation="vertical" >    
+						        	<TextView
+									    android:layout_width="match_parent"
+									    android:layout_height="wrap_content"
+									    android:text="רגיל"
+									    android:layout_weight="1"
+									    android:gravity="bottom|center"
+									    android:textSize="12dp" />
+								        
+								    <TextView 
+								        android:id="@+id/spe_item_price_normal"
+									    android:layout_width="match_parent"
+									    android:layout_height="wrap_content"
+									    android:text="100-130"
+									    android:layout_weight="2"
+									    android:gravity="center"
+									    android:textSize="12dp" />
+								        
+						    	</LinearLayout>
+						    
+						    	<LinearLayout 
+						        android:layout_width="match_parent"
+							    android:layout_height="match_parent"
+							    android:layout_weight="1"
+							    android:background="@drawable/border"
+							    android:orientation="vertical" >
+						            
+					        		<TextView 
+									    android:layout_width="match_parent"
+									    android:layout_height="wrap_content"
+									    android:text="האכלת יד:"
+									    android:layout_weight="1"
+									    android:gravity="bottom|center"
+									    android:textSize="12dp" />
+								        
+								    <TextView 
+								        android:id="@+id/spe_item_price_yad"
+									    android:layout_width="match_parent"
+									    android:layout_height="wrap_content"
+									    android:text="250-350"
+									    android:layout_weight="2"
+									    android:gravity="center"
+									    android:textSize="12dp" />
+								        
+						   		</LinearLayout>  
+						    </LinearLayout>
+				    
+		    </LinearLayout>
+		    
+		    
+    		<!-- משקל -->
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+			    android:layout_height="80dp"
+			    android:layout_weight="1"
+			    android:background="@drawable/border"
+			    android:orientation="vertical" >
+		        
+					<TextView 
+					    android:id="@+id/spe_item_t_wieght" 
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:text="משקל"
+					    android:gravity="bottom|center"
+					    android:textSize="15dp" />
+				        
+				    <TextView 
+				        android:id="@+id/spe_item_weight"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="100g"
+					    android:layout_weight="2"
+					    android:gravity="center"
+					    android:textSize="12dp" />
+				        
+				   
+		    </LinearLayout>
+		    
+		    
+    		<!-- אורך -->
+		    <LinearLayout 
+		        android:layout_width="wrap_content"
+			    android:layout_height="80dp"
+			    android:layout_weight="1"
+			    android:background="@drawable/border"
+			    android:orientation="vertical" >
+		        
+				    <TextView 
+				        android:id="@+id/spe_item_t_lenght" 
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:text="אורך"
+					    android:gravity="bottom|center"
+					    android:textSize="15dp" />
+				        
+				    <TextView 
+				        android:id="@+id/spe_item_length"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="30cm"
+					    android:layout_weight="2"
+					    android:gravity="center"
+					    android:textSize="12dp" />
+				        
+				    
+		    </LinearLayout>
+    
+    </LinearLayout>
+    
+    <!-- תוחלת חיים , מזונות -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/border"
+	    android:orientation="horizontal" >
+	    
+       		 <LinearLayout 
+		        android:layout_width="wrap_content"
+			    android:layout_height="100dp"
+			    android:layout_weight="1"
+			    android:background="@drawable/border"
+			    android:orientation="vertical" >
+				    
+		    		<TextView 
+		    		    android:id="@+id/spe_item_t_life" 
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:layout_weight="1"
+					    android:text="תוחלת חיים בשבי"
+					    android:gravity="bottom|center"
+					    android:textSize="15dp" />
+				        
+				    <TextView 
+				        android:id="@+id/spe_item_life"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="30years"
+					    android:layout_weight="2"
+					    android:gravity="center"
+					    android:textSize="12dp" />
+    	</LinearLayout>
+    	
+       		 <LinearLayout 
+		        android:layout_width="wrap_content"
+			    android:layout_height="100dp"
+			    android:layout_weight="0.8"
+			    android:background="@drawable/border"
+			    android:orientation="vertical" >
+				    
+		    		<TextView 
+		    		    android:id="@+id/spe_item_t_food" 
+					    android:layout_width="match_parent"
+					    android:layout_height="25dp"
+					    android:layout_weight="1"
+					    android:text="תזונה בשבי: "
+					    android:gravity="right"
+					    android:textSize="15dp" />
+				   <ScrollView 
+				        android:layout_width="match_parent"
+					    android:layout_height="75dp"
+				       >     
+				    <TextView 
+				        android:id="@+id/spe_item_food"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:text="זרעים, אגוזים, ירקות, פירות וכופתיות. תערובת זרעים של חריע, חמנייה, אורז, חיטה, שיבולת שועל ומגוון רחב של סוגי דוחן. באביב ובקיץ רצוי להוסיף זרעים מונבטים. צנוברים (אצטרובל), בלוטים, בוטנים. ממגוון של פירות וירקות, בעיקר ענבים, תאנים, אפרסקים ותפוחים. תירס חצי-בשל. ורד הבר, צמחים ירוקים (ורד השן, כוכבית, וכו'), מזון ביצים, לחם לבן, וביסקוויטים לפינוק. לג'אקו יש נטייה לבנות לעצמו תזונה לא מאוזנת ולהשמין ולכן יש להקפיד שלא להלעיט אותו במזונות עתירים שומן. "
+					    android:layout_weight="2"
+					    android:gravity="right"
+					    android:textSize="12dp" />
+				   </ScrollView>
+    	</LinearLayout>
+    </LinearLayout>
+    
+    <!-- תמונות --> 
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/border"
+	    android:orientation="vertical" >
+		    
+		    <GridView
+		        android:id="@+id/spe_item_grid"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:numColumns="3" >
+		    </GridView>
+		    
+    </LinearLayout>
+    
+</LinearLayout>

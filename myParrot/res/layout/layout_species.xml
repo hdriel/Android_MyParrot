@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/species_layout" 
+    tools:context="myparrot.main.MainActivity" 
+    android:background="@drawable/background_gradient_blue">
+
+    <GridView 
+    	android:layout_height="wrap_content" 
+    	android:id="@+id/species_gridView" 
+    	android:layout_width="match_parent" 
+    	android:numColumns="auto_fit"
+    	android:horizontalSpacing="5dp"
+    	android:verticalSpacing="5dp">
+    </GridView>
+
+</LinearLayout>

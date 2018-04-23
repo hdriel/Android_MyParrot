@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dis_text_parent"
+    android:orientation="vertical"
+    android:gravity="right"
+    >
+    
+  <LinearLayout   
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/dis_text_child_c"
+     android:layout_margin="5dp"
+     android:orientation="vertical">
+     
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="תיאור:"
+        android:padding="5dp"
+        android:textSize="20dp" 
+        
+        />
+    <TextView
+        android:id="@+id/dis_descreption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="ג"
+        android:textSize="18dp"
+        />
+ </LinearLayout>
+    
+ <LinearLayout   
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:background="@drawable/dis_text_child_b"
+     android:layout_margin="5dp"
+     android:orientation="vertical">
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="סיפטומים וסימנים:"
+        android:padding="5dp"
+        android:textSize="20dp" 
+        />
+    <TextView
+        android:id="@+id/dis_siptoms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="5dp"
+        android:text="ב"
+        android:textSize="18dp" 
+        />
+     
+ </LinearLayout>
+ 
+
+ <LinearLayout   
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/dis_text_child_a"
+	    android:layout_margin="5dp"
+	    android:orientation="vertical">
+	    
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="דרכי העברה והדבקה:"
+        android:padding="5dp"
+        android:textSize="20dp" 
+        
+        />
+    <TextView
+        android:id="@+id/dis_copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="א"
+        android:textSize="18dp" 
+        />
+     
+ </LinearLayout>   
+    
+    
+    
+</LinearLayout>

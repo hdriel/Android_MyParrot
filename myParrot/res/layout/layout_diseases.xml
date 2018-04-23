@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="myparrot.main.MainActivity"
+    android:id="@+id/diseases_layout"
+    android:background="@drawable/background_blue_circle"
+     >
+
+    <TextView 
+        android:id="@+id/dis_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:text="מחלות זיהומיות נפוצות בתוכים"
+	    android:gravity="center"
+	    android:textSize="25dp"
+	    android:background="#FF8C69"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:id="@+id/dis_layout_link"
+	    android:visibility="gone"
+	    android:background="#FF8C69"
+        >
+    <TextView 
+        android:id="@+id/dis_link"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.2"
+	    android:text="http://tukipedia.com/article/192"
+	    android:gravity="left"
+	    android:paddingLeft="10dp"
+	    android:textSize="13dp"
+        /> 
+        
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="right"
+         android:paddingRight="8dp"
+         android:text="נלקח מהאתר:"
+         android:textSize="13dp" />
+
+    </LinearLayout>
+    
+    <ExpandableListView
+	    android:id="@+id/dis_exp_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentLeft="true"
+		android:dividerHeight="10dp"
+	    >
+     <!-- android:childDivider="#00000000"  -->
+	</ExpandableListView>
+
+    
+    
+</LinearLayout>

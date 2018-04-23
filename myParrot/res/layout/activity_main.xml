@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layouy_main"
+    tools:context="myparrot.main.MainActivity" 
+    android:background="@drawable/background_gradient_blue"
+    >
+
+    <TextView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textDirection="anyRtl"
+        android:padding="5dp"
+        android:layout_gravity="right"
+        android:textSize="20sp"
+        android:text="@string/title_main" />
+	
+	
+	<ScrollView
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:padding="12dp"
+    >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+     >
+    
+
+   <TableLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:paddingRight="2dip"
+        android:paddingLeft="2dip"
+        android:stretchColumns="1"
+	    android:orientation="vertical"  >
+   
+   <TableRow >
+    <Button 
+        android:id="@+id/lay_btn_feather_and_nails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:layout_span="2"
+        android:text="@string/Feather"
+        
+        android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+		android:padding="10dip"
+        android:layout_margin="4dip"/>
+    </TableRow>
+    
+   <TableRow> 
+    <Button 
+        android:id="@+id/lay_btn_list_food"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:text="@string/Food_permitted_and_forbidden" 
+		
+		android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+		android:padding="10dip"
+        android:layout_margin="4dip"/>
+    
+    <Button 
+        android:id="@+id/lay_btn_profile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:text="@string/Food" 
+		
+		android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+		android:padding="10dip"
+        android:layout_margin="4dip"/>
+    </TableRow>
+    
+   <TableRow> 
+    <Button 
+        android:id="@+id/lay_btn_stands"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:text="@string/Stands" 
+		
+		android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+		android:padding="10dip"
+        android:layout_margin="4dip"/>
+    
+    <Button 
+        android:id="@+id/lay_btn_toys"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:text="@string/Toys" 
+		
+		android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+		android:padding="10dip"
+        android:layout_margin="4dip"/>
+    </TableRow>
+   
+  <TableRow>
+    <Button 
+        android:id="@+id/lay_btn_training"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:text="@string/Training"
+
+		android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+	    android:padding="10dip"
+        android:layout_margin="4dip"/>
+ 
+   
+ 
+    <Button 
+        android:id="@+id/lay_btn_diseases"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:text="@string/Diseases" 
+
+		android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+		android:padding="10dip"
+        android:layout_margin="4dip"/>
+ </TableRow>
+ <TableRow>
+    <Button 
+        android:id="@+id/lay_btn_vet_parrot"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:text="@string/Veterinarian_parrots" 
+
+		android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+		android:padding="10dip"
+        android:layout_margin="4dip"/>
+ 
+    
+ 
+    <Button 
+        android:id="@+id/lay_btn_species"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:text="@string/species" 
+
+		android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+		android:padding="10dip"
+        android:layout_margin="4dip"/>
+ </TableRow>
+ <TableRow>
+    <Button 
+        android:id="@+id/lay_btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15sp"
+        android:layout_weight="1"
+        android:layout_span="2"
+        android:text="@string/About_us" 
+        
+		android:textColor="#FFFFFF"
+		android:background="@drawable/buttonshape_blue"
+		android:shadowColor="#A8A8A8"
+		android:shadowDx="0"
+		android:shadowDy="0"
+		android:shadowRadius="5" 
+		android:padding="10dip"
+        android:layout_margin="4dip"/>
+ </TableRow>
+</TableLayout>
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>

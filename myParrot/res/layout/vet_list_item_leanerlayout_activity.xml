@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/vet_item_layout"
+    android:padding="10dp" >
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:padding="10dp"
+    android:orientation="horizontal">
+    
+    			<TextView
+		            android:id="@+id/vet_city_name"
+		            android:layout_weight="1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:text="השם של העיר" />
+		        
+		        <TextView
+		            android:layout_weight="3"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:textStyle="bold"
+		            android:text="עיר:" />
+    
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+		        
+    <TextView
+		            android:id="@+id/vet_clinic_name"
+		            android:layout_weight="1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:text="השם של המרפאה" />
+		        
+		        <TextView
+		            android:layout_weight="3"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:textStyle="bold"
+		            android:text="מרפאה: " />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+		        
+    <TextView
+		            android:layout_weight="1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:textStyle="bold"
+		            android:text="שעות פעילות: " />
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="2"
+    android:orientation="horizontal">
+		        
+     <TextView
+			            android:id="@+id/vet_hoursOpen_contain"
+			            android:layout_weight="1"
+			            android:gravity="center"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:textAlignment="textStart"
+			            android:textSize="16sp"
+			            android:text="לא מעודכן" />
+</LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+		        <TextView
+		            android:id="@+id/vet_note_contain"
+		            android:layout_weight="0.8"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:text="אין הערות" />
+		        
+		        <TextView
+		            android:layout_weight="0.2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:textStyle="bold"
+		            android:text="הערות: " />
+    
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+
+		        <Button
+		            android:id="@+id/vet_phone_call"
+		            android:layout_width="40dp"
+		            android:layout_height="40dp"
+		            android:layout_weight="0.2"
+		            android:background="@drawable/call1"
+		            />
+		        
+		        <TextView
+		            android:id="@+id/vet_phone_num"
+		            android:layout_weight="0.6"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:gravity="right"
+		            android:textSize="16sp"
+		            android:text="00-000-0000" />
+		         
+		        <TextView
+		            android:layout_weight="0.2"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:textStyle="bold"
+		            android:text="יצירת קשר: " />
+    
+</LinearLayout>	        
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+		        
+   				<Button
+		            android:id="@+id/vet_adress_call"
+		            android:layout_weight="0.1"
+		            android:layout_width="75dp"
+		            android:layout_height="40dp"
+		            android:background="@drawable/navigate1"
+		             />
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="0.3"
+		    android:gravity="right"
+		    android:orientation="vertical" >
+    
+    			<TextView
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:textStyle="bold"
+		            android:text="כתובת: " />
+           
+		        <TextView
+		            android:id="@+id/vet_adress_name"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:gravity="right"
+		            android:text="אין כתובת זמינה" />
+		         
+		        
+</LinearLayout>	
+ </LinearLayout>	
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+		        <TextView
+		            android:layout_weight="1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:textStyle="bold"
+		            android:text="קישור לאתר המרפאה: " />
+    </LinearLayout>	
+    
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal">
+		        <TextView
+		            android:id="@+id/vet_link_name"
+		            android:layout_weight="1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAlignment="textStart"
+		            android:textSize="16sp"
+		            android:text="לא נמצא קישור לאתר המרפאה" />
+		        
+		        
+    
+</LinearLayout>	
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3"
+    android:orientation="horizontal">
+		        <ImageView 
+		            android:id="@+id/vet_image"
+		            android:layout_weight="1"
+		            android:layout_gravity="center"
+		            android:layout_width="150dp"
+		            android:layout_height="150dp"
+		            android:src="@drawable/ic_launcher"
+		            />
+</LinearLayout>	 
+		        
+		        
+		    
+</LinearLayout>

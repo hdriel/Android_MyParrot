@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  Main Menu -->
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myparrot.MainActivity" >
+
+     <item  
+        android:title="send"
+        android:id="@+id/send"  
+        android:showAsAction="always"
+        android:icon="@drawable/icon_message"  
+        />
+     
+     <item 
+        android:title="background" 
+        android:id="@+id/menu_background" 
+        android:showAsAction="always" 
+        android:icon="@drawable/icon_theme2" > 
+        <menu >
+            <item 
+		        android:title="blue" 
+		        android:id="@+id/sub_blue"  
+		        android:icon="@drawable/icon_blue"></item> 
+	        <item 
+		        android:title="green" 
+		        android:id="@+id/sub_green"  
+		        android:icon="@drawable/icon_green" ></item>
+	        <item 
+		        android:title="purple" 
+		        android:id="@+id/sub_purple"  
+		        android:icon="@drawable/icon_purple" ></item>
+	        <item 
+		        android:title="orenge" 
+		        android:id="@+id/sub_orenge"  
+		        android:icon="@drawable/icon_orange" ></item>
+        </menu>  
+        </item>   
+  
+</menu>  

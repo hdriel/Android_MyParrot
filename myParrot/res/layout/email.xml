@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/email_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient_blue"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_weight="1"
+        >
+        <EditText
+        android:id="@+id/email_editText_EmailFrom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+        
+        <TextView
+        android:id="@+id/email_label_from"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_weight="0.6"
+        android:text="הכינוי שלי: "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="wrap_content"
+        android:background="@drawable/line_view_gradient"
+        android:layout_height="1dp"
+        ></View>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_weight="1"
+        >
+        
+        <EditText
+	        android:id="@+id/email_editText_EmailSubject"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.4"
+	        android:ems="10" >
+	
+	        <requestFocus />
+   		</EditText>
+   		
+       <TextView
+	        android:id="@+id/email_labelSubject"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:textSize="18sp"
+        	android:layout_weight="0.6"
+	        android:text="לשיפור במסך:"
+	        android:textAppearance="?android:attr/textAppearanceLarge" /> 
+    </LinearLayout>
+	
+	<View
+        android:layout_width="wrap_content"
+        android:background="@drawable/line_view_gradient"
+        android:layout_height="1dp"></View>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+		android:layout_weight="1"
+        >
+    <TextView
+        android:id="@+id/email_label_EmailContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="הערה לשיפור במסך / באפליקציה: "
+        android:textSize="18sp"
+        android:paddingTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/email_editText_EmailContent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity ="center"
+        android:gravity="top|right"
+        android:layout_marginTop="15dp"
+        android:inputType="textMultiLine"
+        android:lines="5" 
+        android:hint="כתוב פה את ההערה שלך"
+        />
+    </LinearLayout>
+    
+   <View
+        android:layout_width="wrap_content"
+        android:background="@drawable/line_view_gradient"
+        android:layout_height="1dp"></View>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+		android:layout_weight="1"
+		android:gravity="bottom"
+        >
+        
+	<Button
+        android:id="@+id/email_buttonDismiss"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:onClick="onButtonClickCancel"
+        android:layout_weight="1"
+        android:text="ביטול" />
+    <Button
+        android:id="@+id/email_buttonSend"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="onButtonClickSend"
+        android:text="שליחה" />
+    
+    </LinearLayout>
+
+</LinearLayout>

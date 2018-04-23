@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myparrot"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:targetSdkVersion="21"
+        android:minSdkVersion="15"
+        android:largeHeap="true"
+        android:anyDensity="false"
+         />
+    
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/parrot"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+       
+        <!-- main package -->  
+        <activity
+            android:name="myparrot.main.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Activity_Email"
+            android:label="תמיכה טכנית ויצירת קשר" >
+        </activity>
+        
+        <activity
+            android:name=".ActivityImageToZoom"
+            android:label="הגדלת תמונה" >
+        </activity>
+        
+        <!-- About package -->  
+        <activity
+            android:name=".Activity_About"
+            android:label="@string/About_us"
+             >
+        </activity>
+        
+        <!-- Diseases package -->
+        <activity
+            android:name="myparrot.diseases.Activity_Diseases"
+            android:label="@string/Diseases" >
+        </activity>
+        
+        
+        <!-- List Foods package -->  
+        <activity
+            android:name="myparrot.list.food.Activity_Food_List"
+            android:windowSoftInputMode="stateHidden"
+            android:label="@string/Food_permitted_and_forbidden" >
+        </activity>
+        
+        
+        <!-- Feather package -->  
+        <activity
+            android:name=".Activity_Feather"
+            android:label="@string/Feather" >
+        </activity>
+        
+        <!-- Food package -->
+        <activity
+            android:name=".Activity_Food"
+            android:label="@string/Food" >
+        </activity>
+        
+        <!-- Stands package -->  
+          <activity
+            android:name="myparrot.stands.Activity_Stands"
+            android:label="@string/Stands" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+          </activity>
+          
+          
+          <activity
+            android:name="myparrot.stands.ActivityToCall"
+            android:label="@string/Stands" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+                <data
+                    android:mimeType="image/*"
+                    android:scheme="android.resource" >
+                </data>
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+            </intent-filter>
+         </activity>
+         
+         
+       <!-- Toys package -->    
+        <activity
+            android:name="myparrot.toys.Activity_Toys"
+            android:label="@string/Toys" >
+        </activity>
+        <activity
+            android:name="myparrot.toys.Toys_info_activity"
+            android:label="@string/Toys" >
+        </activity>
+        <activity
+            android:name="myparrot.toys.Toys_info_game_activity"
+            android:label="@string/Toys" >
+        </activity>
+        
+        
+        <!-- Training package -->
+        <activity
+            android:name=".Activity_Training"
+            android:label="@string/Training" >
+        </activity>
+        
+        <!-- Vets package -->
+        <activity
+            android:name="myparrot.vets.Activity_Vets"
+            android:label="@string/Veterinarian_parrots" >
+        </activity>
+        <activity
+            android:name="myparrot.vets.ActivityToCallVets"
+            android:label="@string/Veterinarian_parrots" >
+        </activity>
+        
+        <!-- Species package -->
+        <activity
+            android:name="myparrot.species.Activity_Species"
+            android:label="@string/species" >
+        </activity>
+        <activity
+            android:name="myparrot.species.ActivityImageToCall"
+            android:label="@string/species" >
+        </activity>
+        <activity
+            android:name="myparrot.species.ActivityItemToCall"
+            android:label="טבלת מידע על התוכי" >
+        </activity>
+        
+        
+        
+       
+    </application>
+
+</manifest>

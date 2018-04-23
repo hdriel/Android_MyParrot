@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right"
+    android:id="@+id/child_vet"
+    android:background="@drawable/line_item_blue"
+    >
+
+    <TextView
+        android:id="@+id/clinic_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="מרפאות בעיר "
+        android:paddingRight="50dp"
+        android:textSize="23dp" />
+
+</LinearLayout>
